@@ -1,0 +1,29 @@
+{
+  "version": 8,
+  "sources": {
+    "a": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/smartmaps/foil4gr1/reusable-h3-pmtiles/h3.pmtiles",
+      "attribution": "Reusable H3"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#222"
+      }
+    },
+    {
+      "id": "h3",
+      "type": "fill",
+      "source": "a",
+      "source-layer": "h3",
+      "paint": {
+        "fill-color": "#0ff",
+        "fill-outline-color": "#000"
+      }
+    }
+  ]
+}
